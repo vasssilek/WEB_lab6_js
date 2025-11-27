@@ -1,0 +1,49 @@
+.menu-main {
+    list-style: none;
+    margin: auto;
+    text-align: center;
+}
+
+.menu-main li {
+    display: inline-block;
+}
+
+.menu-main li:after {
+    color: #2d2e2d;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.menu-main li:last-child:after {
+    content: none;
+}
+
+.menu-main a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #2d2e2d;
+    margin-left: 50px;
+}
+
+.menu-main a:hover {
+    color: #f36d85;
+    text-underline: pink;
+}
+
+/*
+        <h2>Вибір рейсу</h2>
+
+        <label>Початковий пункт:</label>
+        <select id="originSelect"></select>
+
+        <label>Кінцевий пункт:</label>
+        <select id="destinationSelect"></select>
+
+        <button id="showBtn">Показати</button>
+
+        <h2>Інформаційне табло</h2>
+        <div id="board"></div>
+ */

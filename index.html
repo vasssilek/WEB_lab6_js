@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link type="text/css" rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/menu_style.css">
+
+    <link rel="stylesheet" href="styles/lab1.css">
+    <script src="lab1.js"></script>
+
+    <title>Лабораторна робота №1 JS</title>
+</head>
+
+<body>
+    <main class = "main">
+        <div class="strip"></div>
+        <header class = "header">
+            <h1>Лабораторні роботи з Javascript</h1>
+            <h2>Виконала студентка групи АнД-31
+                <br>Война Наталія</h2>
+        </header>
+        <hr color="#eda6a6">
+
+        <ul class = "menu-main">
+            <li><a href = "index.html">Лабораторна робота №1</a> </li>
+            <li><a href = "lab2.html">Лабораторна робота №2</a> </li>
+            <li><a href = "lab3.html">Лабораторна робота №3</a> </li>
+        </ul>
+
+        <h2>Завдання на лабораторну роботу</h2>
+        <div class="zavd">
+            Створити масиви значень для рейсів: <br>
+            - номер рейсу; <br> - початковий пункт; <br> - кінцевий пункт; <br> - тривалість рейсу. <br>
+            Вивести інформацію у вигляді інформаційного табло, у якому визначити
+            які рейси вже в повітрі, <br> які ще не вилітали (для таких вказати час, що залишився
+            до вильоту). <br> Початковий та кінцевий пункт обираються зі списку.
+        </div>
+
+        <div class="container">
+            <section class = "filters">
+                <h2>Фільтр рейсів</h2>
+                <div class = "row">
+                    <div>
+                        <label>Початковий пункт:</label>
+                        <select id="origin-select">
+                            <option value="all">Усі міста</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Кінцевий пункт:</label>
+                        <select id="destination-select">
+                            <option value="all">Усі міста</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <button id="reset-filters">Скинути фільтри</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="board">
+                <h2>Інформація про рейси</h2>
+                <div class="table-wrapper">
+                    <table class="flights-table">
+                        <thead>
+                        <tr>
+                            <th>№ рейсу</th>
+                            <th>Початковий пункт</th>
+                            <th>Кінцевий пункт</th>
+                            <th>Час вильоту</th>
+                            <th>Тривалість</th>
+                            <th>Статус</th>
+                            <th>Час до вильоту</th>
+                        </tr>
+                        </thead>
+                        <tbody id="flights-body">
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </div>
+
+    </main>
+</body>
+</html>

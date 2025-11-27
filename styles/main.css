@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Montserrat:wght@100..900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1300px;
+    background-color: #fbf0e4;
+}
+
+.strip {
+    background-image: url('/img/f.png');
+    background-size: auto 100%;
+    background-repeat: repeat-x;
+    height: 70px;
+}
+
+h1, h2, div {
+    font-family: "Playfair Display", serif;
+    line-height: 170%;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.header {
+    text-align: center;
+    position: relative;
+    background: linear-gradient(
+            180deg,
+            #eda6a6 20%,
+            #fbf0e4 100%
+    );
+}
+
+.zavd {
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px 10px 10px 10px;
+}
